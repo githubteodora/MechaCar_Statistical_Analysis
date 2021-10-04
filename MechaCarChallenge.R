@@ -40,3 +40,26 @@ suspension_table <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsF
 total_summary <- suspension_table %>% summarize(mean_PSI=mean(PSI), median_PSI=median(PSI), var_PSI=var(PSI), STDEV_PSI=sd(PSI))
 lot_summary <- suspension_table %>% group_by(Manufacturing_Lot) %>% summarize(mean_PSI=mean(PSI), median_PSI=median(PSI), variance_PSI=var(PSI), STDEV_PSI=sd(PSI), .groups = 'keep')
 
+# T tests: 
+# a T test  is a type of inferential statistic used to study if there is a statistical difference between two groups.
+# Mathematically, it establishes the problem by assuming that the means of the two distributions are equal (H???: µ???=µ???). If the t-test rejects the null hypothesis (H???: µ???=µ???), it indicates that the groups are highly probably different.
+# This test should be implemented when the groups have 20-30 samples
+# If we want to examine more groups or larger sample sizes, there are other tests more accurate than t-tests such as z-test, chi-square test or f-test.
+
+# p-values: The p-value or probability value is the probability of obtaining test results at least as extreme as the results actually observed during the test, assuming that the null hypothesis is correct.
+# p_value > ??? (Critical value): Fail to reject the null hypothesis of the statistical test.
+# p_value ??? ??? (Critical value): Reject the null hypothesis of the statistical test.
+
+# The critical value that most statisticians choose is ??? = 0.05. This 0.05 means that, if we run the experiment 100 times, 5% of the times we will be able to reject the null hypothesis and 95% we will not.
+# p_value > 0.1: No evidence
+# p_value between 0.05 and 0.1: Weak evidence
+# p_value between 0.01 and 0.05: Evidence
+# p_value between 0.001 and 0.01: Strong evidence
+# p_value < 0.001: Very strong evidence
+
+t.test(suspension_table$PSI, mu=1500)
+t.test(subset(suspension_table, Manufacturing_Lot == "Lot1")$PSI, mu= 1500)
+t.test(subset(suspension_table, Manufacturing_Lot == "Lot2")$PSI, mu= 1500)
+t.test(subset(suspension_table, Manufacturing_Lot == "Lot3")$PSI, mu= 1500)
+
+
