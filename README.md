@@ -37,4 +37,7 @@ A: If we analyze the total summary table, the variance meets the the requirement
 
 ## T-Tests on Suspension Coils
 
+T-test results:<br>
+![image](https://github.com/githubteodora/MechaCar_Statistical_Analysis/blob/main/ttests.JPG)
+
 
