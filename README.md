@@ -32,4 +32,9 @@ Goal - to create a summary statistics table to show:
 #### Per Lot Summary:<br>
 ![Per lot](https://github.com/githubteodora/MechaCar_Statistical_Analysis/blob/main/lot_summary.JPG)
 
+Q: The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?<br>
+A: If we analyze the total summary table, the variance meets the the requirement of not exceeding 100 pounds per square inch. However, by looking at the per lot summary, it is easily noticeable that the variance for lot 3 is 70% hgher than the maximum allowed one. 
+
+## T-Tests on Suspension Coils
+
 
