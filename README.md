@@ -101,3 +101,6 @@ mean of x
   1496.14 
 ```
   Analysis: Working with a criticla value of 0.05, the p-value result above indicates that there is significant evidence to reject the null hypothesis, so we can conclude that the mean PSI for lot 3 is statistically different than the mean value of the population;
+  
+## Study Design: MechaCar vs Competition
+
