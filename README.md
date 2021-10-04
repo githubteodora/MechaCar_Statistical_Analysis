@@ -38,6 +38,66 @@ A: If we analyze the total summary table, the variance meets the the requirement
 ## T-Tests on Suspension Coils
 
 T-test results:<br>
-![image](https://github.com/githubteodora/MechaCar_Statistical_Analysis/blob/main/ttests.JPG)
+![image](https://github.com/githubteodora/MechaCar_Statistical_Analysis/blob/main/ttests.JPG) <br>
 
+Source table: [csv](https://github.com/githubteodora/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv) <br>
 
+### Comparison of all manufacturing lots against mean PSI of the population: T-test result
+```
+  One Sample t-test
+
+data:  suspension_table$PSI
+t = -1.8931, df = 149, p-value = 0.06028
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1497.507 1500.053
+sample estimates:
+mean of x 
+  1498.78 
+```
+  Analysis: Working with a criticla value of 0.05, the p-value result above indicates that there is no evidence to reject the null hypothesis, so we can conclude that the mean PSI is not statistically different than the mean value of the population;
+  
+### Manufacturing lot #1 against the mean PSI of the population: T-test result
+```
+	One Sample t-test
+
+data:  subset(suspension_table, Manufacturing_Lot == "Lot1")$PSI
+t = 0, df = 49, p-value = 1
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1499.719 1500.281
+sample estimates:
+mean of x 
+     1500 
+```
+  Analysis: Working with a criticla value of 0.05, the p-value result above indicates that there is no evidence to reject the null hypothesis, so we can conclude that the mean PSI for lot 1 is not statistically different than the mean value of the population;
+  
+### Manufacturing lot #2 against the mean PSI of the population: T-test result
+```
+	One Sample t-test
+
+data:  subset(suspension_table, Manufacturing_Lot == "Lot2")$PSI
+t = 0.51745, df = 49, p-value = 0.6072
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1499.423 1500.977
+sample estimates:
+mean of x 
+   1500.2 
+```
+  Analysis: Working with a criticla value of 0.05, the p-value result above indicates that there is no evidence to reject the null hypothesis, so we can conclude that the mean PSI for lot 2 is not statistically different than the mean value of the population;
+  
+### Manufacturing lot #3 against the mean PSI of the population: T-test result  
+```
+	One Sample t-test
+
+data:  subset(suspension_table, Manufacturing_Lot == "Lot3")$PSI
+t = -2.0916, df = 49, p-value = 0.04168
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1492.431 1499.849
+sample estimates:
+mean of x 
+  1496.14 
+```
+  Analysis: Working with a criticla value of 0.05, the p-value result above indicates that there is significant evidence to reject the null hypothesis, so we can conclude that the mean PSI for lot 3 is statistically different than the mean value of the population;
