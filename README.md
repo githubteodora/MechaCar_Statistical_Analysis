@@ -7,7 +7,9 @@ Goals of the analysis: <br>
 4. Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. 
 
 ## Linear Regression to Predict MPG <br>
+![multiple regression, plots](https://github.com/githubteodora/MechaCar_Statistical_Analysis/blob/main/multiple_regression.png) <br>
 
+![multiple regression - output]
 Q: Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset? <br>
 A: 
 
