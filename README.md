@@ -103,4 +103,17 @@ mean of x
   Analysis: Working with a criticla value of 0.05, the p-value result above indicates that there is significant evidence to reject the null hypothesis, so we can conclude that the mean PSI for lot 3 is statistically different than the mean value of the population;
   
 ## Study Design: MechaCar vs Competition
+Goal:  to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.<br>
+Metrics of interest: cost, city fuel efficiency, maintenance cost, safety rating <br>
+Null hypothesis: The mean cost, mean city fuel efficiency, mean maintenance cost and mean safety rating of MechaCar vehicles are not different than those of a chosen competitor(s).<br>
+
+### Statistical tests: Two-sample t-test 
+The two-sample t-test will help us identify if there is a statistical difference between the distibution means from 2 samples. We can obtain sample data from MechaCar and compare it with sample data form one or more competitors. 
+
+### Data that will be needed
+ - official data for vehicles of competutor manufacturers; can be obtained via dealer websites;
+ - 30 or more samples;
+ - random sampling must be ensured;
+ - normality of data distribution must be ensured;
+
 
