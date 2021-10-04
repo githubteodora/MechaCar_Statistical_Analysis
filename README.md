@@ -21,5 +21,7 @@ Q: Does this linear model predict mpg of MechaCar prototypes effectively? Why or
 A: This linear model does not predict the mpg of MechaCar prototypes effectively. The significance of the intercept shows that we have not captured all variables that correlate with a vehicle's mpg. More discovery and research is needed in order to identify other variables and produce a more efficient model.
 
 ## Summary Statistics on Suspension Coils <br>
-
+Goal - to create a summary statistics table to show:
+1. The suspension coil’s PSI continuous variable across all manufacturing lots.
+2. The following PSI metrics for each lot: mean, median, variance, and standard deviation.
 
